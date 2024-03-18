@@ -46,7 +46,7 @@ export const cartSlice = createSlice({
             state.totalAmount;
         },
 
-        updateProducts(state, action: PayloadAction<ProductData[]>) {
+        updateProducts(_, action: PayloadAction<ProductData[]>) {
             return {
                 products: action.payload,
                 totalAmount: 0,
